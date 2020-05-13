@@ -10,10 +10,31 @@
 </head>
 
 <body class="bg-light">
+    
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <a class="navbar-brand" href="#">Fixed navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+   
     <div class="container py-3">
         <div class="row">
             <header class="col-12 mb-3">
-                <h1 class="display-3 text-black-50 py-3">La cultura cultura chilena como factor clave del alza de la diabetes a nivel nacional.</h1>
+                <h1 class="display-1 text-primary py-4">La cultura cultura chilena como factor clave del alza de la diabetes a nivel nacional.</h1>
                 <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin porttitor dapibus est vitae maximus. Praesent neque mauris, cursus eget tempor non, dictum a nisl.</p>
                 <p>Nuestro diabetólogo nos explicó las principales razones de diabetes en Chile, debido a que el 10% padece de esta enfermedad.  El sedentarismo y la mala alimentación nos ha pasado la cuenta.</p>
             </header>
@@ -39,7 +60,7 @@
         var texto = ["Lorem ipsum dolor sit amet, consectetur adipiscing elit", "Lorem ipsum dolor sit amet, consectetur adipiscing elit", "Lorem ipsum dolor sit amet, consectetur adipiscing elit", "Lorem ipsum dolor sit amet, consectetur adipiscing elit", "Lorem ipsum dolor sit amet, consectetur adipiscing elit", "Lorem ipsum dolor sit amet, consectetur adipiscing elit"];
         // Referencias para lo que sigue https://api.jquery.com/jquery.each/ ({ https://api.jquery.com/append/ })
         $.each( texto, function( i, frase ) {
-            $("#articulos").append("<div class='col-md-6 col-lg-4 col-xl-3 mb-4'><article class='bg-warning text-light p-3 shadow rounded'>"+frase+"</article></div>");
+            $("#articulos").append("<div class='col-12 col-lg-4 col-xl-3 mb-4'><article class='bg-warning text-light p-3 shadow rounded'>"+frase+"</article></div>");
         });
         // Lo que sigue aprovecha Bootstrap y jQuery. Afecta a la proporción del video embebido, quitando/poniendo una clase
         $(window).bind("load resize",function() {
