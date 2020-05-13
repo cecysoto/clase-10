@@ -72,7 +72,7 @@
         var texto = ["Lorem ipsum dolor sit amet, consectetur adipiscing elit", "Lorem ipsum dolor sit amet, consectetur adipiscing elit", "Lorem ipsum dolor sit amet, consectetur adipiscing elit", "Lorem ipsum dolor sit amet, consectetur adipiscing elit", "Lorem ipsum dolor sit amet, consectetur adipiscing elit", "Lorem ipsum dolor sit amet, consectetur adipiscing elit"];
         // Referencias para lo que sigue https://api.jquery.com/jquery.each/ ({ https://api.jquery.com/append/ })
         $.each( texto, function( i, frase ) {
-            $("#articulos").append("<div class='col-12 col-lg-4 col-xl-3 mb-4'><article class='bg-warning text-light p-3 shadow rounded'>"+frase+"</article></div>");
+            $("#articulos").append("<div class='col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-4'><article class='bg-info text-light p-3 shadow rounded'>"+frase+"</article></div>");
         });
         // Lo que sigue aprovecha Bootstrap y jQuery. Afecta a la proporción del video embebido, quitando/poniendo una clase
         $(window).bind("load resize",function() {
